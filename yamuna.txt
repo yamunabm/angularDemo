@@ -1,0 +1,61 @@
+
+// Decorators :
+ - pipe
+ - Module
+ - directives
+ - service
+ - component
+###############################################################
+>ng -v
+
+Angular CLI: 1.7.4
+Node: 10.3.0
+OS: win32 x64
+Angular:
+
+################################################################
+>npm install @angular/cli -g
+ng new <project-name>
+ng serve ===> to start project live ==> ng serve [--port 3000]
+
+package.json ==> metadat of project ( dependencies,git repository, licences
+
+
+#################################################################
+package,json
+angular-cli.json
+index.html
+####################################################################
+angular 2 onwards they devided into different modules
+angular animation
+http packageforms
+core js -> polyfills to support browsers
+rxjs- > obsorvable libraries, to integarte with anyn other programming languages
+zone.js -> executional context where you bind ur data( databinding happens) --> primarily used for detecting changes in the module
+			can get from $scope
+etc
+
+all the decorators comes from angular/core
+
+
+###########################################################
+
+jasmine - > test suit tool
+karma -> test runner
+
+###################################################
+
+@NgModule({ =====> decorator
+  declarations: [ ====> ng if, switch, clause etc
+    AppComponent
+  ],
+  imports: [
+    BrowserModule
+  ],
+  providers: [], ===> services
+  bootstrap: [AppComponent]
+})
+
+
+
+https://github.com/synergy2411/demo-soc-gen
