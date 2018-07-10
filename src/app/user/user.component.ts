@@ -14,9 +14,14 @@ import { User } from '../model/User';
 })
 
 export class UserComponent {
-    title = 'User-Demo-App';
+    //title = 'User-Demo-App';
 
-    @Input('user') user : User;
+    @Input('users') users : User[];
+    @Input('title') title : any;
+myClasses={
+    myBorder : true,
+    myText : true
+}
 
     constructor(){
         console.log("copnstrructor");

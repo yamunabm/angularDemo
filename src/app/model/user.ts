@@ -5,5 +5,6 @@ export interface User  {
     dob : Date;
     income : number;
     votes : number;
+    isWorking : boolean,
     image : string;
 }

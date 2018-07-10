@@ -1,0 +1,13 @@
+{
+    "userdata": [
+        {
+            "firstName": "Bill",
+            "lastName": "Gates",
+            "dob": "Dec 21, 1963",
+            "income": 30000,
+            "votes": 14,
+            "isWorking": true,
+            "image": "assets/image/bill.jpg"
+        }
+    ]
+}

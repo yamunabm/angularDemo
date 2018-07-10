@@ -1,0 +1,50 @@
+<p>
+  login works!
+</p>
+
+<div class="jumbotron">
+  <h1 class="text-center"> Register </h1>
+
+  <form [formGroup]="registerForm">
+    <div class="form-group">
+      <label for="username">UserName : </label>
+      <input type="text" name="username" class="form-control" [formControl]="username">
+      <div [hidden]="username.valid || username.untouched">
+        Some problem with username
+        <div [hidden]="!username.hasError('required') ">
+          username is mandatory
+
+        </div>
+        <div [hidden]="!username.hasError('minlength') ">
+          username should contain 6 characters
+
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="password">Password : </label>
+      <input type="password" name="password" class="form-control" [formControl]="password">
+      <div [hidden]="password.valid || password.untouched">
+        Some problem with pwd
+        <div [hidden]="!password.hasError('required') ">
+          pwd is mandatory
+
+        </div>
+        <div [hidden]="!password.hasError('minlength') ">
+          pwd should contain 6 characters
+
+        </div>
+        <div [hidden]="!password.hasError('needExclamation') ">
+          Excalamation is required
+
+        </div>
+      </div>
+    </div>
+    <!-- 
+        class="form-control" coming from bootstrap angular
+        [formControl]="password" coming from reactive forms module -->
+    <button type="submit" class="btn btn-lg btn-success" (click)="register()">
+      Register
+    </button>
+  </form>
+</div>
