@@ -12,6 +12,9 @@ import { CountryCodePipe } from './pipes/countrycode.pipe';
 import { LoginComponent } from './auth/login/login.component';
 import { RegisterComponent } from './auth/register/register.component';
 import {DataService} from './services/data.service'
+import { AuthService } from './services/auth.service';
+import { RouterModule } from '@angular/router';
+import { APP_ROUTES } from './app.routes';
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,9 +31,10 @@ import {DataService} from './services/data.service'
     FormsModule,
     ReactiveFormsModule,
     HttpModule,
-    HttpClientModule
+    HttpClientModule,
+    RouterModule.forRoot(APP_ROUTES)
   ],
-  providers: [DataService],
+  providers: [DataService, AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

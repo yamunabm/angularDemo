@@ -34,8 +34,10 @@ export class AppComponent {
     //   () => console.log('COMPLETED'));
 
     firebase.initializeApp({
-      apiKey: "AIzaSyDCsoL5_5lzp5vPh_SyjwWLSddscWOJVT0",
-      authDomain: "fir-soc-gen.firebaseapp.com"
+      // apiKey: "AIzaSyDCsoL5_5lzp5vPh_SyjwWLSddscWOJVT0",
+      // authDomain: "fir-soc-gen.firebaseapp.com"
+      apiKey: "AIzaSyDsZQZW9uAno0ska68W1SXJpn7v2AIBJMk",
+      authDomain: "fir-demo-angular-3248d.firebaseapp.com"
     });
     this.dataService.getApiData().subscribe(
       data => this.users = data

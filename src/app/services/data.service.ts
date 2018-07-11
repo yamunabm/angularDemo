@@ -14,7 +14,7 @@ export class DataService {
     }
 
     getApiData() {
-        return this.httpclient.get<User[]>("https://fir-soc-gen.firebaseio.com/userdata.json");
+        return this.httpclient.get<User[]>("https://fir-demo-angular-3248d.firebaseio.com/userdata.json"); //"https://fir-soc-gen.firebaseio.com/userdata.json"
     }
 
     getUserData() {
