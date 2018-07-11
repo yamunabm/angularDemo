@@ -59,3 +59,13 @@ karma -> test runner
 
 
 https://github.com/synergy2411/demo-soc-gen
+
+
+declarations : pipe, directives, component
+
+
+
+interceptor services will have access for all request and response == ? 
+
+
+synergy2411@outlook.com
